@@ -1,15 +1,24 @@
 /* Global Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000; /* black background */
-    color: #f0f0f0; /* light text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #f0f0f0;
+    overflow-x: hidden;
+    touch-action: manipulation;
+}
+
+/* Prevent zooming on mobile */
+@viewport {
+    width: device-width;
+    zoom: 1.0;
 }
 
 /* Header & Footer */
 header, footer {
-    background-color: #8B0000; /* dark red */
+    background-color: #8B0000;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -31,6 +40,35 @@ header, footer {
     color: #ff9999;
 }
 
+/* All Links */
+a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff9999;
+    text-decoration: underline;
+}
+
+/* Ensure nav links are styled correctly */
+nav a,
+nav a:visited,
+nav a:active {
+    color: #ff4d4d !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9999 !important;
+    text-decoration: underline;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
 /* Container Section */
 .container {
     width: 85%;
@@ -46,6 +84,15 @@ header, footer {
 h1, h2 {
     color: #ff3333;
     margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+li {
+    color: #f0f0f0;
+    margin-bottom: 5px;
 }
 
 /* Tables */
@@ -113,4 +160,35 @@ video {
     border-radius: 50%;
     border: 4px solid #ff4d4d;
     max-width: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    input, textarea, button {
+        font-size: 1em;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
 }
