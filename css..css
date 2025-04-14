@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* black background */
+    color: #f0f0f0; /* light text */
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: #8B0000; /* dark red */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Links */
+.links {
+    background-color: #111;
+    text-align: center;
+    padding: 15px 0;
+}
+.links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+.links a:hover {
+    color: #ff9999;
+}
+
+/* Container Section */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+/* Section Headings */
+h1, h2 {
+    color: #ff3333;
+    margin-bottom: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+    color: #f0f0f0;
+}
+th {
+    background-color: #b30000;
+}
+
+/* Form Elements */
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffcccc;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Video */
+video {
+    max-width: 100%;
+    border: 2px solid #8B0000;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Profile Image */
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid #ff4d4d;
+    max-width: 150px;
+}
